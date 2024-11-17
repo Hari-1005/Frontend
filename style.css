@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin: 50px auto;
+    text-align: center;
+    width: 400px;
+}
+
+.content {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    color: #FF6B82;
+    font-weight: 600;
+}
+
+.line {
+    border: 0.9px solid #C8C8C8;
+    width: 107px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    border: 0.3px solid #C8C8C8;
+    /* border-radius: 3px; */
+    position: relative;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.units {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.units label {
+    font-weight: 600;
+}
+
+.units label p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    padding-top: 5px;
+    color: #444;
+}
+
+.discount {
+    background-color: #FF6B82;
+    padding: 2px 3px;
+    color: #f8f8f8;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+
+.price p {
+    font-size: 11px;
+    text-decoration: line-through;
+    color: gray;
+    text-align: start;
+}
+
+.secound-section {
+    text-align: start;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    display: none;
+}
+
+.secound-section select {
+    padding: 5px 9px;
+    margin: 0 2px 3px 0;
+    border-radius: 3px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"]:checked ~ label p {
+    display: none;
+}
+
+table th,
+table td {
+    text-align: start;
+    font-size: 11px;
+    font-weight: 400;
+    padding-bottom: 4px;
+    padding-right: 6px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.delivery {
+    color: #FF6B82;
+    font-weight: 500;
+}
+
+.total-price {
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background-color: #FF6B82;
+    border: none;
+    border-radius: 3px;
+}
+
+.box.selected {
+    border: 4px solid #FF6B82;
+    background-color: rgba(255, 107, 129, 0.063);
+}
+
+.box.selected::before {
+    content: "MOST POPULAR";
+    font-size: 11px;
+    position: absolute;
+    top: -10px;
+    right: 1.8px;
+    background-color: #FF6B82;
+    color: #f8f8f8;
+    padding: 5px 8.5px;
+    border-radius: 0 0 5px 5px;
+}
+.box.selected::after {
+    content: "";
+    height: 0;
+    width: 104px;
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 7px solid #D7445B;
+    z-index: -1;
+}
+input[type="radio"]:checked {
+    accent-color: #FF6B82;
+}
+
+.plus {
+    font-size: 18px;
+}
+
